@@ -41,7 +41,7 @@ jobs:
     - name: Clone source code
       run: |
         df -hT $PWD
-        git clone $REPO_URL -b $REPO_BRANCH r8125-dkms
+        git clone https://github.com/dominicx/realtek-r8125-dkms-pve.git -b $REPO_BRANCH r8125-dkms
         
     - name: Execute modifed shell
       run: |
